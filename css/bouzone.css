@@ -1,0 +1,99 @@
+
+
+p code {
+    font-size:13px;    
+}
+
+
+#menu-top .row {
+    padding-bottom: 0px;
+}
+#menu-top .row .column {
+    padding: 0px !important;
+}
+#menu-top .menu {}
+#menu-top a.item {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    z-index: 0;
+    transition: color 0.2s ease 0s;
+    outline: medium none;    
+}
+#menu-top .down.item {
+    text-align: center;
+    display: block;
+}
+
+.ui.sticky  {
+
+    background:#FFF;
+}
+.ui.sticky #gotomenu {
+    display:none;
+}
+.ui.sticky.fixed  #gotomenu, .ui.sticky.bound #gotomenu{
+    display:block;
+}
+.ui.sticky.fixed .meta{
+    display:none;
+}
+
+
+
+#article-top{
+    background:#FFF;
+    padding-top: 0px;
+    padding-bottom: 0px;
+/*
+*/
+}
+#article-top.row .column {
+/*
+    padding-bottom: 4px !important;
+    padding-top: 2px !important;
+*/
+}
+#article-top .ui.text.menu {
+    margin-bottom:0px;
+}
+#article-top h1 {
+    margin-top:8px;
+}
+
+
+#article-content {
+    margin-top: 10px !important;
+}
+
+
+#echappees .row.legende {
+    padding-top:0px
+}
+#echappees .row.centered {
+    padding-bottom:0px
+}
+#echappees img {
+  //-  min-width:120px;
+}
+
+
+
+
+
+#footer.row .column{
+    margin-top:12px !important;
+    margin-bottom:10px !important;
+}
+
+#footer .ui.divider {
+    padding:0px !important;
+    margin:0px !important;
+}
+#footer .credit {
+    text-transform: initial;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    margin: -6px;
+}
+

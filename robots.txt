@@ -1,0 +1,7 @@
+
+User-agent: *
+
+Disallow: /bower-components/
+Disallow: /css/
+
+Sitemap: http://bou.zone/sitemap.txt
