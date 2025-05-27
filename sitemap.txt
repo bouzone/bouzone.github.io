@@ -3,11 +3,11 @@ http://bou.zone/contact.html
 http://bou.zone/credits.html
 http://bou.zone/echappees.html
 http://bou.zone/helene-bou-bio.html
-http://bou.zone/emerveillees
+http://bou.zone/emerveillees.html
 http://bou.zone/opsis.html
 http://bou.zone/quinn.html
 http://bou.zone/synopsis.html
 http://bou.zone/text.html
 http://bou.zone/dedale.html
 http://bou.zone/tresses.html
-http/html://bou.zone/index.html
+http://bou.zone/index.html
