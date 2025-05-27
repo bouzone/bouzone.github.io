@@ -10,3 +10,4 @@ http://bou.zone/synopsis.html
 http://bou.zone/text.html
 http://bou.zone/dedale.html
 http://bou.zone/tresses.html
+http://bou.zone/emerveillees/html
