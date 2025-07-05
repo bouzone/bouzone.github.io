@@ -1,0 +1,83 @@
+{
+  "name": "Hélène Bou - Artiste Cirque Aérien",
+  "short_name": "Bou.zone",
+  "description": "Blog d'Hélène Bou, artiste de cirque aérien. Découvrez ses spectacles, créations et univers artistique.",
+  "lang": "fr",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#2185d0",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["entertainment", "lifestyle", "art"],
+  "dir": "ltr",
+  "iarc_rating_id": "e84b072d-71b3-4d3e-86ae-31a8ce4e53b7",
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "Spectacle Dédale",
+      "short_name": "Dédale",
+      "description": "Découvrir le spectacle Dédale",
+      "url": "/dedale.html#art",
+      "icons": [
+        {
+          "src": "/favicon.png",
+          "sizes": "32x32"
+        }
+      ]
+    },
+    {
+      "name": "Spectacle TresseS",
+      "short_name": "TresseS",
+      "description": "Découvrir le spectacle TresseS",
+      "url": "/tresses.html#art",
+      "icons": [
+        {
+          "src": "/favicon.png",
+          "sizes": "32x32"
+        }
+      ]
+    },
+    {
+      "name": "Galerie Vidéos",
+      "short_name": "Vidéos",
+      "description": "Voir les vidéos et tutoriels",
+      "url": "/videos.html#art",
+      "icons": [
+        {
+          "src": "/favicon.png",
+          "sizes": "32x32"
+        }
+      ]
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Contacter Hélène Bou",
+      "url": "/contact.html",
+      "icons": [
+        {
+          "src": "/favicon.png",
+          "sizes": "32x32"
+        }
+      ]
+    }
+  ]
+}
