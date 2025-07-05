@@ -1,0 +1,83 @@
+/* Styles spécifiques à la galerie photo */
+.gallery-section {
+    margin: 2rem 0;
+}
+
+.gallery-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.photo-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.photo-container {
+    flex: 1;
+    min-width: 200px;
+}
+
+.photo-container.large {
+    flex: 2;
+}
+
+.photo-container.medium {
+    flex: 1.5;
+}
+
+.photo-container.small {
+    flex: 1;
+}
+
+.photo-container img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.photo-container img:hover {
+    transform: scale(1.02);
+}
+
+.photo-caption {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.photo-caption a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.photo-caption a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design pour la galerie */
+@media (max-width: 768px) {
+    .photo-row {
+        flex-direction: column;
+    }
+    
+    .photo-container {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-section h3 {
+        font-size: 1.3rem;
+    }
+    
+    .photo-row {
+        gap: 0.5rem;
+    }
+}
