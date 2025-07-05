@@ -90,31 +90,6 @@ bou.zone/
 ### Fichiers de configuration
 - `site.webmanifest` - Configuration PWA
 
-## Développement local
-
-### Prérequis
-- Navigateur web moderne
-- Serveur local (optionnel, pour éviter les problèmes CORS)
-
-### Installation
-```bash
-# Cloner le repository
-git clone https://github.com/bouzone/bouzone.github.io.git
-cd bouzone.github.io
-
-# Servir localement (optionnel)
-python -m http.server 8000
-# ou
-npx serve .
-```
-
-### Modification du contenu
-1. Éditer les fichiers HTML dans `pages/`
-2. Ajouter les images dans le dossier `images/` approprié
-3. Modifier les styles dans `css/` si nécessaire
-4. Tester localement
-5. Commit et push vers GitHub
-
 ## Réseaux sociaux
 
 - **Facebook** - Profil artiste
