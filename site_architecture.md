@@ -8,7 +8,8 @@ bou.zone/
 ├── README.md                     # Documentation du projet
 ├── 
 ├── pages/
-│   ├── emerveillees.html         # Événement "Émerveillée(s)"
+│ ├── emerveillees.html         # Événement "Émerveillée(s)"
+│ ├── ponts.html                # Article Blog"
 │   ├── helene-bou-bio.html       # Biographie / Who's Bou?
 │   ├── dedale.html               # Spectacle "Dédale"
 │   ├── tresses.html              # Spectacle "TresseS"
