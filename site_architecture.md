@@ -5,11 +5,12 @@
 ```
 bou.zone/
 ├── index.html                    # Page d'accueil (blog)
+├── articles/
+│ ├── emerveillees.html         # Événement "Émerveillée(s)"
+│ ├── ponts.html                # Article Blog"
 ├── README.md                     # Documentation du projet
 ├── 
 ├── pages/
-│ ├── emerveillees.html         # Événement "Émerveillée(s)"
-│ ├── ponts.html                # Article Blog"
 │   ├── helene-bou-bio.html       # Biographie / Who's Bou?
 │   ├── dedale.html               # Spectacle "Dédale"
 │   ├── tresses.html              # Spectacle "TresseS"
