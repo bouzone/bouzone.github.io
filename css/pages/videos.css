@@ -1,0 +1,250 @@
+/* videos.css - Styles spécifiques à la page portfolio vidéos */
+
+/* ==========================================================================
+   FILTRES DU PORTFOLIO VIDÉOS
+   ========================================================================== */
+
+.video-portfolio-filters {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.video-filter-button {
+    display: inline-block;
+    margin: 0.20rem;
+    padding: 0.5rem 1rem;
+    background: #ffffff;
+    border: 2px solid #000000;
+    color: #000000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 0.80rem;
+}
+
+.video-filter-button:hover,
+.video-filter-button.active {
+    background: #000000;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+/* ==========================================================================
+   GRILLE ET ITEMS DU PORTFOLIO
+   ========================================================================== */
+
+.video-portfolio-grid {
+    margin-top: 2rem;
+}
+
+.video-portfolio-item {
+    margin-bottom: 2rem;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: none;
+    transition: all 0.3s ease;
+    opacity: 1;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.video-portfolio-item:hover {
+    transform: translateY(-3px);
+    box-shadow: none;
+}
+
+.video-portfolio-item.hidden {
+    opacity: 0;
+    transform: scale(0.95);
+    pointer-events: none;
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   MINIATURES VIDÉO - VIGNETTES PLUS GRANDES
+   ========================================================================== */
+
+.video-portfolio-thumbnail {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: white;
+    padding-bottom: 56.25%; /* Ratio 16:9 pour tous */
+    height: 0; /* Important pour le ratio responsive */
+}
+
+/* Tous les formats utilisent maintenant le même ratio 16:9 plus grand */
+.video-portfolio-item[data-category="tutorials"] .video-portfolio-thumbnail,
+.video-portfolio-item[data-category="riviere"] .video-portfolio-thumbnail,
+.video-portfolio-item[data-category="clip"] .video-portfolio-thumbnail,
+.video-portfolio-item[data-category="spectacles"] .video-portfolio-thumbnail {
+    padding-bottom: 56.25%; /* Ratio 16:9 uniforme et plus grand */
+    height: 0;
+}
+
+.video-portfolio-thumbnail iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    opacity: 1;
+    border: none;
+}
+
+/* ==========================================================================
+   OVERLAY ET BOUTON PLAY
+   ========================================================================== */
+
+.video-portfolio-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 1;
+    z-index: 10;
+}
+
+.video-portfolio-overlay:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.video-portfolio-play-icon {
+    width: 0;
+    height: 0;
+    border-left: 24px solid #ffffff;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    margin-left: 4px;
+}
+
+/* ==========================================================================
+   MODAL VIDÉO
+   ========================================================================== */
+
+.video-portfolio-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.video-portfolio-modal.show {
+    display: flex;
+}
+
+.video-portfolio-modal-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    max-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-portfolio-modal iframe {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+    border: none;
+}
+
+.video-portfolio-modal-close {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.8);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.video-portfolio-modal-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .video-portfolio-modal-content {
+        max-width: 95%;
+        max-height: 70%;
+        padding: 0 10px;
+    }
+    
+    .video-portfolio-modal-close {
+        top: -40px;
+        right: 10px;
+        font-size: 2rem;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .video-filter-button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.8rem;
+    }
+    
+    /* Ratio 16:9 maintenu sur mobile aussi */
+    .video-portfolio-item[data-category="tutorials"] .video-portfolio-thumbnail,
+    .video-portfolio-item[data-category="riviere"] .video-portfolio-thumbnail,
+    .video-portfolio-item[data-category="clip"] .video-portfolio-thumbnail,
+    .video-portfolio-item[data-category="spectacles"] .video-portfolio-thumbnail {
+        padding-bottom: 56.25%; /* Même ratio sur mobile */
+    }
+    
+    .video-portfolio-overlay {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .video-portfolio-play-icon {
+        border-left: 18px solid #ffffff;
+        border-top: 11px solid transparent;
+        border-bottom: 11px solid transparent;
+        margin-left: 3px;
+    }
+}
