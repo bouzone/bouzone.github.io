@@ -1,196 +1,146 @@
 /* ==========================================================================
-   PAGE TRESSES - STYLES COMPATIBLES AVEC EMERVEILLEES.JS
-   ========================================================================== */
+PAGE TRESSES - STYLES SPÉCIFIQUES
+========================================================================== */
 
+/* Encapsulation avec préfixe pour éviter les conflits */
 .page-tresses {
     /* Conteneur principal de la page */
 }
 
 /* ==========================================================================
-   GALERIE PHOTOS TRESSES (Compatible emerveillees.js)
-   ========================================================================== */
-
-.gallery-container {
-    position: relative;
+SLIDESHOW TRESSES
+========================================================================== */
+.tresses-slideshow {
     max-width: 100%;
-    margin: 0 auto 2rem auto;
-}
-
-.gallery-slideshow {
     position: relative;
-    width: 100%;
-    background: #f8f9fa;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-bottom: 2rem;
 }
 
-/* Focus state pour la navigation clavier */
-.gallery-slideshow:focus {
-    outline: 3px solid #2c3e50;
-    outline-offset: 2px;
-}
-
-.gallery-slideshow.gallery-focused {
-    box-shadow: 0 4px 16px rgba(44, 62, 80, 0.3);
-}
-
-/* Slides */
-.gallery-slide {
+.tresses-slideshow .mySlides {
     display: none;
-    position: relative;
     text-align: center;
 }
 
-.gallery-slide.active {
+.tresses-slideshow .mySlides.active {
     display: block;
-    animation: fadeIn 0.5s ease-in-out;
 }
 
-.gallery-slide img {
+.tresses-slideshow .mySlides img {
     width: 100%;
     height: auto;
     max-height: 600px;
     object-fit: cover;
-    display: block;
-}
-
-/* Légendes des images */
-.slide-caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    font-size: 0.9rem;
-    line-height: 1.4;
+    border-radius: 8px;
 }
 
 /* Boutons de navigation */
-.gallery-prev, 
-.gallery-next {
+.tresses-slideshow .prev, 
+.tresses-slideshow .next {
+    cursor: pointer;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
+    width: auto;
+    margin-top: -22px;
     padding: 16px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    z-index: 10;
-    transition: all 0.3s ease;
-    border-radius: 3px;
-    user-select: none;
-}
-
-.gallery-prev {
-    left: 10px;
-}
-
-.gallery-next {
-    right: 10px;
-}
-
-.gallery-prev:hover,
-.gallery-next:hover {
-    background: rgba(0, 0, 0, 0.8);
-    transform: translateY(-50%) scale(1.1);
-}
-
-.gallery-prev:focus,
-.gallery-next:focus {
-    outline: 2px solid white;
-    outline-offset: 2px;
-}
-
-/* Compteur de slides */
-.gallery-counter {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-size: 0.8rem;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0,0,0,0.5);
+    user-select: none;
     z-index: 10;
+    border: none;
+    outline: none;
+}
+
+.tresses-slideshow .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.tresses-slideshow .prev:hover, 
+.tresses-slideshow .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    transform: scale(1.1);
+}
+
+/* Textes overlay */
+.tresses-slideshow .text {
+    color: white;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    box-sizing: border-box;
+    border-radius: 0 0 8px 8px;
+}
+
+.tresses-slideshow .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 8px 0 8px 0;
 }
 
 /* Navigation par points */
-.gallery-dots {
+.tresses-slideshow .dots-container {
     text-align: center;
-    padding: 20px 0 0 0;
-    background: #f8f9fa;
+    margin-top: 20px;
 }
 
-.dot {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #bbb;
-    margin: 0 5px;
+.tresses-slideshow .dot {
     cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
     transition: all 0.3s ease;
     border: 2px solid transparent;
 }
 
-.dot.active {
-    background: #2c3e50;
+.tresses-slideshow .dot.active {
+    background-color: #2c3e50;
     transform: scale(1.2);
     border-color: #34495e;
 }
 
-.dot:hover {
-    background: #717171;
+.tresses-slideshow .dot:hover {
+    background-color: #717171;
     transform: scale(1.1);
 }
 
-.dot:focus {
-    outline: 2px solid #2c3e50;
-    outline-offset: 2px;
-}
-
-/* Indicateur de focus clavier */
-.gallery-focus-indicator {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background: rgba(44, 62, 80, 0.9);
-    color: white;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-size: 0.7rem;
-    z-index: 15;
-    display: none;
-}
-
 /* Animation de transition */
-@keyframes fadeIn {
-    from { opacity: 0; }
+.tresses-slideshow .fade {
+    animation-name: tresses-fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes tresses-fade {
+    from { opacity: 0.4; }
     to { opacity: 1; }
 }
 
 /* ==========================================================================
-   INTÉGRATION VIDÉO VIMEO
-   ========================================================================== */
+INTÉGRATION VIDÉO VIMEO - STYLES ADDITIONNELS
+========================================================================== */
 
-.tresses-video-wrapper {
-    margin: 2rem 0;
-    padding: 0 1rem;
-}
-
+/* Container vidéo responsive avec coins arrondis - même taille que slideshow */
 .tresses-video-container {
     position: relative;
     width: 100%;
-    max-width: 100%;
-    margin: 0 auto 2rem auto;
-    border-radius: 8px;
+    max-width: 100%; /* Même largeur que le slideshow */
+    margin: 0 auto 2rem auto; /* Même marge que le slideshow */
+    border-radius: 8px; /* Même rayon que les images du slideshow */
     overflow: hidden;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     background: #000;
@@ -203,6 +153,7 @@
     padding-top: 56.25%; /* 16:9 aspect ratio */
 }
 
+/* Iframe vidéo positionné absolument */
 .tresses-video-container iframe {
     position: absolute;
     top: 0;
@@ -210,84 +161,32 @@
     width: 100%;
     height: 100%;
     border: none;
-    border-radius: 8px;
+    border-radius: 8px; /* Même rayon que les images */
+}
+
+/* Masquer les éléments Vimeo indésirables */
+.tresses-video-container iframe {
+    /* Paramètres pour un lecteur épuré */
     background: #000;
 }
 
-/* ==========================================================================
-   LOGOS DE SOUTIEN
-   ========================================================================== */
-.logos-soutien img {
-    max-height: 70px;
-    width: auto;
-    margin-bottom: 1rem;
-    transition: transform 0.3s ease;
-}
-
-.logos-soutien img:hover {
-    transform: scale(1.05);
+/* Styles pour harmoniser avec les photos existantes */
+.tresses-video-wrapper {
+    margin: 2rem 0;
+    padding: 0 1rem;
 }
 
 /* ==========================================================================
-   CONTENU SPÉCIFIQUE TRESSES
-   ========================================================================== */
-
-/* Citations et textes en italique */
-.page-tresses blockquote,
-.page-tresses p i {
-    font-style: italic;
-    border-left: 4px solid #2c3e50;
-    padding-left: 1rem;
-    margin: 1.5rem 0;
-    color: #555;
-}
-
-/* Liens externes */
-.page-tresses a[target="_blank"]::after {
-    content: " ↗";
-    font-size: 0.8em;
-    opacity: 0.7;
-}
-
-/* Photos sans effet de survol */
-.photo-container.no-hover img:hover {
-    transform: none !important;
-    filter: none !important;
-    opacity: 1 !important;
-}
-
-/* ==========================================================================
-   RESPONSIVE DESIGN
-   ========================================================================== */
-
+RESPONSIVE DESIGN POUR VIDÉO
+========================================================================== */
 @media (max-width: 1200px) {
     .tresses-video-container {
-        max-width: 100%;
+        max-width: 100%; /* Reste à 100% comme le slideshow */
         margin: 0 auto 1.5rem auto;
     }
 }
 
 @media (max-width: 768px) {
-    .gallery-slide img {
-        max-height: 400px;
-    }
-    
-    .gallery-prev,
-    .gallery-next {
-        padding: 12px;
-        font-size: 16px;
-    }
-    
-    .slide-caption {
-        font-size: 0.8rem;
-        padding: 0.8rem;
-    }
-    
-    .gallery-counter {
-        font-size: 0.7rem;
-        padding: 3px 6px;
-    }
-    
     .tresses-video-container {
         max-width: 100%;
         margin: 0 auto 1.5rem auto;
@@ -302,41 +201,11 @@
         padding: 0;
         margin: 0;
     }
-    
-    .logos-soutien {
-        text-align: center !important;
-    }
-}
-
-@media (max-width: 600px) {
-    .gallery-slide img {
-        max-height: 300px;
-    }
-    
-    .gallery-prev,
-    .gallery-next {
-        padding: 10px;
-        font-size: 14px;
-    }
-    
-    .dot {
-        width: 10px;
-        height: 10px;
-        margin: 0 3px;
-    }
 }
 
 @media (max-width: 480px) {
-    .gallery-container {
-        margin-bottom: 1.5rem;
-    }
-    
-    .gallery-dots {
-        padding: 15px 0 0 0;
-    }
-    
     .tresses-video-container {
-        margin: 0 auto 1.5rem auto;
+        margin: 0 auto 1.5rem auto; /* Aligné sur slideshow margin-bottom */
         border-radius: 8px;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
     }
@@ -348,6 +217,114 @@
     .tresses-video-wrapper {
         margin: 0;
     }
+}
+
+/* ==========================================================================
+ACCESSIBILITÉ VIDÉO
+========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+    .tresses-video-container {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+}
+/* ==========================================================================
+LOGOS DE SOUTIEN
+========================================================================== */
+.logos-soutien img {
+    max-height: 70px;
+    width: auto;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.logos-soutien img:hover {
+    transform: scale(1.05);
+}
+
+/* ==========================================================================
+STYLES SPÉCIFIQUES AU CONTENU TRESSES
+========================================================================== */
+
+/* Amélioration des citations */
+.page-tresses blockquote,
+.page-tresses p i {
+    font-style: italic;
+    border-left: 4px solid #2c3e50;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    color: #555;
+}
+
+/* Liens avec style spécifique */
+.page-tresses a[target="_blank"]::after {
+    content: " ↗";
+    font-size: 0.8em;
+    opacity: 0.7;
+}
+/*pas d'effet de survol sur les photos*/
+css.photo-container.no-hover img:hover {
+    transform: none !important;
+    filter: none !important;
+    opacity: 1 !important;
+}
+/* ==========================================================================
+RESPONSIVE DESIGN
+========================================================================== */
+@media (max-width: 768px) {
+    .tresses-slideshow .mySlides img {
+        max-height: 400px;
+    }
+    
+    .tresses-slideshow .prev,
+    .tresses-slideshow .next {
+        padding: 12px;
+        font-size: 16px;
+    }
+    
+    .tresses-slideshow .text {
+        font-size: 13px;
+        padding: 6px 8px;
+    }
+    
+    .tresses-video-container {
+        max-width: 90%;
+    }
+    
+    .logos-soutien {
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .tresses-video-container {
+        max-width: 95%;
+    }
+    
+    .tresses-slideshow .mySlides img {
+        max-height: 300px;
+    }
+    
+    .tresses-slideshow .prev,
+    .tresses-slideshow .next {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tresses-slideshow {
+        margin-bottom: 1.5rem;
+    }
+    
+    .tresses-slideshow .dots-container {
+        margin-top: 15px;
+    }
+    
+    .tresses-slideshow .dot {
+        height: 12px;
+        width: 12px;
+        margin: 0 3px;
+    }
     
     .logos-soutien img {
         max-height: 50px;
@@ -355,26 +332,28 @@
 }
 
 /* ==========================================================================
-   ACCESSIBILITÉ
-   ========================================================================== */
+ACCESSIBILITÉ
+========================================================================== */
+.tresses-slideshow .prev:focus,
+.tresses-slideshow .next:focus,
+.tresses-slideshow .dot:focus {
+    outline: 2px solid #2c3e50;
+    outline-offset: 2px;
+}
 
-/* Préférences d'animation réduites */
+/* Amélioration pour les utilisateurs qui préfèrent moins d'animations */
 @media (prefers-reduced-motion: reduce) {
-    .gallery-slide.active {
+    .tresses-slideshow .fade {
         animation: none;
     }
     
-    .gallery-prev,
-    .gallery-next,
-    .dot {
+    .tresses-slideshow .prev,
+    .tresses-slideshow .next,
+    .tresses-slideshow .dot {
         transition: none;
     }
     
     .logos-soutien img {
         transition: none;
-    }
-    
-    .tresses-video-container {
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
     }
 }
