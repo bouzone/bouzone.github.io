@@ -412,63 +412,63 @@
     <script src="https://player.vimeo.com/api/player.js"></script>
     <script src="js/bouzone.js"></script>
 
-    <!-- JavaScript encapsulé pour le slideshow -->
-    <script>
-        const tressesSlideshow = {
-            slideIndex: 1,
+<!-- JavaScript encapsulé pour le slideshow -->
+<script>
+    const tressesSlideshow = {
+        slideIndex: 1,
+        
+        init: function() {
+            this.showSlides(this.slideIndex);
+            // Auto slideshow supprimé - navigation manuelle uniquement
+            // setInterval(() => {
+            //     this.plusSlides(1);
+            // }, 5000);
+        },
+        
+        plusSlides: function(n) {
+            this.showSlides(this.slideIndex += n);
+        },
+        
+        currentSlide: function(n) {
+            this.showSlides(this.slideIndex = n);
+        },
+        
+        showSlides: function(n) {
+            const slides = document.querySelectorAll(".tresses-slideshow .mySlides");
+            const dots = document.querySelectorAll(".tresses-slideshow .dot");
             
-            init: function() {
-                this.showSlides(this.slideIndex);
-                // Auto slideshow
-                setInterval(() => {
-                    this.plusSlides(1);
-                }, 5000);
-            },
-
-            plusSlides: function(n) {
-                this.showSlides(this.slideIndex += n);
-            },
-
-            currentSlide: function(n) {
-                this.showSlides(this.slideIndex = n);
-            },
-
-            showSlides: function(n) {
-                const slides = document.querySelectorAll(".tresses-slideshow .mySlides");
-                const dots = document.querySelectorAll(".tresses-slideshow .dot");
-                
-                if (n > slides.length) { this.slideIndex = 1; }
-                if (n < 1) { this.slideIndex = slides.length; }
-                
-                slides.forEach(slide => {
-                    slide.style.display = "none";
-                    slide.classList.remove("active");
-                });
-                
-                dots.forEach(dot => {
-                    dot.classList.remove("active");
-                });
-                
-                if (slides[this.slideIndex - 1]) {
-                    slides[this.slideIndex - 1].style.display = "block";
-                    slides[this.slideIndex - 1].classList.add("active");
-                }
-                
-                if (dots[this.slideIndex - 1]) {
-                    dots[this.slideIndex - 1].classList.add("active");
-                }
+            if (n > slides.length) { this.slideIndex = 1; }
+            if (n < 1) { this.slideIndex = slides.length; }
+            
+            slides.forEach(slide => {
+                slide.style.display = "none";
+                slide.classList.remove("active");
+            });
+            
+            dots.forEach(dot => {
+                dot.classList.remove("active");
+            });
+            
+            if (slides[this.slideIndex - 1]) {
+                slides[this.slideIndex - 1].style.display = "block";
+                slides[this.slideIndex - 1].classList.add("active");
             }
-        };
-
-        // Initialiser le slideshow et les embeds quand le DOM est prêt
-        document.addEventListener('DOMContentLoaded', function() {
-            tressesSlideshow.init();
-        });
-
-        // Initialiser les embeds Semantic UI quand jQuery est prêt
-        $(document).ready(function() {
-            $('.ui.embed').embed();
-        });
-    </script>
+            
+            if (dots[this.slideIndex - 1]) {
+                dots[this.slideIndex - 1].classList.add("active");
+            }
+        }
+    };
+    
+    // Initialiser le slideshow quand le DOM est prêt
+    document.addEventListener('DOMContentLoaded', function() {
+        tressesSlideshow.init();
+    });
+    
+    // Initialiser les embeds Semantic UI quand jQuery est prêt
+    $(document).ready(function() {
+        $('.ui.embed').embed();
+    });
+</script>
 </body>
 </html>
