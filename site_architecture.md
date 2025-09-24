@@ -6,9 +6,9 @@
 bou.zone/
 ├── index.html                    # Page d'accueil (blog)
 ├── articles/
-│ ├── emerveillees.html         # Événement "Émerveillée(s)"
-│ ├── ponts.html                # Article Blog"
-│ ├── portique.html                # Article Blog"
+│ ├── emerveillees.html           # Événement "Émerveillée(s)"
+│ ├── ponts.html                  # Article Blog"
+│ ├── portique.html               # Article Blog"
 ├── README.md                     # Documentation du projet
 ├── 
 ├── pages/
@@ -42,10 +42,12 @@ bou.zone/
 │   │ 
 │   ├── tresses/                  # Images du spectacle TresseS
 │   ├── emerveillees/             # Images de l'événement Émerveillée(s)
+|   ├── ponts/                    # Images de l'article POnts
+│   ├── photos_portique/          # Images de l'article Portique
 │   │
 │   ├── quinn/                    # Images de l'archive Quinn
 │   │
-│   ├── Opsis			  # Images de l'archive Opsis
+│   ├── Opsis			                # Images de l'archive Opsis
 │   └── echappees                 # Image pour la galerie Échappées
 ├── 
 ├── favicon.svg                   # Favicon SVG
@@ -57,7 +59,7 @@ bou.zone/
 ## Structure de navigation
 
 ### Navigation principale
-- **Accueil** (`emerveillees.html`) - Page d'accueil avec événement principal
+- **Accueil** (`index.html`) - Page d'accueil Blog
 - **Who's Bou?** (`helene-bou-bio.html#art`) - Biographie de l'artiste
 - **Spectacles en cours** :
   - **Dédale** (`dedale.html#art`) - Spectacle principal
