@@ -8,6 +8,7 @@ bou.zone/
 ├── articles/
 │ ├── emerveillees.html         # Événement "Émerveillée(s)"
 │ ├── ponts.html                # Article Blog"
+│ ├── portique.html                # Article Blog"
 ├── README.md                     # Documentation du projet
 ├── 
 ├── pages/
