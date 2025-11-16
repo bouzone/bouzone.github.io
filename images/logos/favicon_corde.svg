@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Fond transparent -->
+  <rect width="32" height="32" fill="none"/>
+  
+  <!-- Étoile détachée en haut -->
+  <path d="M 16,2 L 16.5,3.5 L 18.2,3.5 L 16.9,4.5 L 17.4,6 L 16,5 L 14.6,6 L 15.1,4.5 L 13.8,3.5 L 15.5,3.5 Z" fill="black"/>
+  
+  <!-- Corde verticale centrale (sert de 2ème jambe du H) -->
+  <line x1="16" y1="8" x2="16" y2="22" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Lettres HB simples -->
+  <g>
+    <!-- H simple - la corde est la jambe droite -->
+    <!-- Montant gauche -->
+    <rect x="6" y="11" width="2.5" height="12" fill="black"/>
+    
+    <!-- Barre transversale -->
+    <rect x="8.5" y="16" width="7.5" height="2.5" fill="black"/>
+    
+    <!-- B en négatif (espacé de la corde) -->
+    <!-- Boucle supérieure remplie -->
+    <path d="M 20,11 L 25,11 C 26.5,11 27.5,12 27.5,13.5 C 27.5,15 26.5,16 25,16 L 20,16 Z" 
+          fill="black"/>
+    
+    <!-- Boucle inférieure remplie -->
+    <path d="M 20,17.5 L 25.5,17.5 C 27,17.5 28,18.5 28,20.5 C 28,22.5 27,23 25.5,23 L 20,23 Z" 
+          fill="black"/>
+  </g>
+  
+  <!-- Lacet qui serpente en bas -->
+  <path d="M 16,22 Q 18,24 16,26 Q 14,28 16,30" 
+        stroke="black" 
+        stroke-width="1.5" 
+        fill="none" 
+        stroke-linecap="round"/>
+</svg>
