@@ -9,6 +9,8 @@ bou.zone/
 │ ├── emerveillees.html           # Événement "Émerveillée(s)"
 │ ├── ponts.html                  # Article Blog"
 │ ├── portique.html               # Article Blog"
+│ ├── resteenmer.html             # Article Blog"
+
 ├── README.md                     # Documentation du projet
 ├── 
 ├── pages/
@@ -36,6 +38,7 @@ bou.zone/
 │   └── pages/
 │       ├── videos.js             # Scripts spécifiques à la galerie vidéos
 │       └── emerveillees.js       # Scripts spécifiques à l'événement Émerveillée(s)
+│       └── filters.js            # Scripts spécifiques au filtrage des articles de la page index/blog
 ├── 
 ├── images/
 │   ├── dedale/                   # Images du spectacle Dédale
@@ -44,6 +47,7 @@ bou.zone/
 │   ├── emerveillees/             # Images de l'événement Émerveillée(s)
 |   ├── ponts/                    # Images de l'article POnts
 │   ├── photos_portique/          # Images de l'article Portique
+│   ├── resteenmer/               # Images de l'article Reste en mer
 │   │
 │   ├── quinn/                    # Images de l'archive Quinn
 │   │
@@ -64,10 +68,10 @@ bou.zone/
 - **Spectacles en cours** :
   - **Dédale** (`dedale.html#art`) - Spectacle principal
   - **TresseS** (`tresses.html#art`) - Spectacle principal
-- **Archives** (menu déroulant) :
+- **Sillage** (menu déroulant) :
   - **Quinn** (`quinn.html#art`) - Ancienne création
   - **Opsis** (`opsis.html#art`) - Ancienne création
-- **Vidéos** (`videos.html#art`) - Galerie multimédia
+  - **Vidéos** (`videos.html#art`) - Galerie multimédia
 - **Échappées** (`echappees.html#art`) - Réflexions artistiques
 - **Contact** (`contact.html`) - Informations de contact
 
