@@ -30,7 +30,7 @@ bou.zone/
 │       ├── index.css             # Styles spécifiques à l'accueil
 │       ├── tresses.css           # Styles spécifiques au spectacle TresseS
 │       ├── emerveillees.css      # Styles spécifiques à l'événement Émerveillée(s)
-│	├── echappees.css         # Styles spécifiques à la galerie Échappées
+│	      ├── echappees.css         # Styles spécifiques à la galerie Échappées
 │       └── videos.css            # Styles spécifiques à la galerie vidéos
 ├── 
 ├── js/
