@@ -6,7 +6,8 @@ emerveillees.html
 opsis.html
 quinn.html
 dedale.html
+dedale-english.html
 tresses.html
-echappees.html
+tresses-english.html
 contact.html
 credits.html
