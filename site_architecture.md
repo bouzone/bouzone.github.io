@@ -19,7 +19,6 @@ bou.zone/
 │   ├── tresses.html              # Spectacle "TresseS"
 │   ├── quinn.html                # Archive "Quinn"
 │   ├── opsis.html                # Archive "Opsis"
-│   ├── videos.html               # Galerie vidéos
 │   ├── echappees.html            # Réflexions / Échappées
 │   ├── contact.html              # Page de contact
 │   └── credits.html              # Crédits
@@ -31,18 +30,15 @@ bou.zone/
 │       ├── tresses.css           # Styles spécifiques au spectacle TresseS
 │       ├── emerveillees.css      # Styles spécifiques à l'événement Émerveillée(s)
 │	      ├── echappees.css         # Styles spécifiques à la galerie Échappées
-│       └── videos.css            # Styles spécifiques à la galerie vidéos
 ├── 
 ├── js/
 │   ├── bouzone.js                # Scripts JavaScript globaux
 │   └── pages/
-│       ├── videos.js             # Scripts spécifiques à la galerie vidéos
 │       └── emerveillees.js       # Scripts spécifiques à l'événement Émerveillée(s)
 │       └── filters.js            # Scripts spécifiques au filtrage des articles de la page index/blog
 ├── 
 ├── images/
-│   ├── dedale/                   # Images du spectacle Dédale
-│   │ 
+│   ├── dedale/                   # Images du spectacle Dédale 
 │   ├── tresses/                  # Images du spectacle TresseS
 │   ├── emerveillees/             # Images de l'événement Émerveillée(s)
 |   ├── ponts/                    # Images de l'article POnts
@@ -50,7 +46,6 @@ bou.zone/
 │   ├── resteenmer/               # Images de l'article Reste en mer
 │   │
 │   ├── quinn/                    # Images de l'archive Quinn
-│   │
 │   ├── Opsis			                # Images de l'archive Opsis
 │   └── echappees                 # Image pour la galerie Échappées
 ├── 
@@ -71,7 +66,6 @@ bou.zone/
 - **Sillage** (menu déroulant) :
   - **Quinn** (`quinn.html#art`) - Ancienne création
   - **Opsis** (`opsis.html#art`) - Ancienne création
-  - **Vidéos** (`videos.html#art`) - Galerie multimédia
 - **Échappées** (`echappees.html#art`) - Réflexions artistiques
 - **Contact** (`contact.html`) - Informations de contact
 
