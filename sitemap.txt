@@ -3,6 +3,7 @@ index.html
 helene-bou-bio.html
 helene-bou-bio-english.html
 emerveillees.html
+dong.html
 opsis.html
 quinn.html
 dedale.html
