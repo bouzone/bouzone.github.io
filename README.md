@@ -11,13 +11,12 @@ Site vitrine présentant les spectacles, créations et réflexions artistiques d
 ## Structure du site
 
 ### Pages principales
-- **Accueil** - Événement principal "Émerveillée(s)"
+- **Accueil** - Journal et actualités
 - **Who's Bou?** - Biographie de l'artiste
 - **Spectacles en cours** :
-  - **Dédale** - Spectacle principal
-  - **TresseS** - Spectacle principal
-- **Archives** - Créations passées (Quinn, Opsis)
-- **Vidéos** - Galerie multimédia
+  - **Dédale** - Spectacle en tournée
+  - **TresseS** - Spectacle en tournée
+- **Sillage** - Créations passées (Quinn, Opsis)
 - **Échappées** - Galeries artistiques
 - **Contact** - Informations de contact
 
