@@ -32,7 +32,7 @@ bou.zone/
 │   ├── tresses.html
 │   ├── quinn.html
 │   ├── opsis.html
-│   ├── videos.html
+│   ├── dong.html
 │   ├── echappees.html
 │   ├── contact.html
 │   └── credits.html
@@ -43,7 +43,9 @@ bou.zone/
 │   ├── bouzone.js
 │   └── pages/
 ├── images/                       # Images par projet
+│   ├── blog/                    
 │   ├── dedale/
+│   ├── dong/
 │   ├── tresses/
 │   ├── emerveillees/
 │   ├── quinn/
