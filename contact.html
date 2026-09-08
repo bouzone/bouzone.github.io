@@ -314,5 +314,19 @@
             $('.ui.dropdown').dropdown();
         });
     </script>
+    <!-- Ajuste dynamiquement la marge de défilement du champ newsletter
+         selon la hauteur réelle du menu sticky (responsive, sans valeur codée en dur) -->
+    <script>
+        function ajusterMargeNewsletter() {
+            var menu = document.querySelector('.sticky-nav');
+            var champ = document.getElementById('newsletter');
+            if (menu && champ) {
+                var hauteur = menu.getBoundingClientRect().height + 20; // +20px de respiration
+                champ.style.scrollMarginTop = hauteur + 'px';
+            }
+        }
+        window.addEventListener('load', ajusterMargeNewsletter);
+        window.addEventListener('resize', ajusterMargeNewsletter);
+    </script>
 </body>
 </html>
