@@ -202,14 +202,15 @@
                                         
                                         <div class="ui hidden divider"></div>
 
-                                        <h4 id="newsletter">La Lettre d'Hélène</h4>
+                                        <h4>La Lettre d'Hélène</h4>
                                         <p>Actualités, dates de tournée et carnets de bord, directement par email.</p>
                                         <form action="https://helenebou.substack.com/api/v1/free"
                                               method="post"
                                               target="_blank"
                                               class="ui action input newsletter-form"
                                               aria-label="Formulaire d'inscription à la newsletter">
-                                            <input type="email"
+                                            <input id="newsletter"
+                                                   type="email"
                                                    name="email"
                                                    placeholder="Votre adresse email*"
                                                    aria-label="Adresse email*"
